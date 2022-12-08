@@ -4,7 +4,8 @@ I'm using this as an excuse to use **a different tool or language each day**, so
 
 The more unusual/unconventional the tool, the more fun I think I will have using it.
 
-Near the end, I expect I will need to use my strongest tools as the problems get harder each day.
+Midway I may also do Part 1 and Part 2 in different languages, with the rule that I can reuse a language for one of the two parts but not both  
+Near the end, I expect I will need to use my strongest tools, as the problems get harder each day
 
 ----
 
