@@ -1,20 +1,49 @@
-# advent-of-code-2022
-https://adventofcode.com/
+# Advent of Code 2022
+https://adventofcode.com/ is an event where every day for 25 days leading up to christmas, you get a challenge that should be solved using programming or similar tools.  
+I'm using this as an excuse to use **a different tool or language each day**, some for the first time ever.
 
-Don't look at any of the solutions if you don't want spoilers!
+The more unusual/unconventional the tool, the more fun I think I will have using it.
 
-(Solutions will only appear after the leaderboard is full)
+Near the end, I expect I will need to use my strongest tools as the problems get harder each day.
 
-Just an excuse to try out 1 morbillion different programming languages and tools
+----
 
-Here's some languages I plan on using (the more impractical the better):
+Don't look at any of the solutions if you don't want spoilers!  
+(I only upload my solutions after the top 100 leaderboard is full)
+
+----
+
+## My thoughts on some languages after using them for challenges
+
+### Rust
+Really liked the error messages, they helped teach me the language and also pointed out some memory safety issues I'd never thought about before.  
+Took a long time to write as a first timer but I can see myself using it for general purposes
+
+### Haskell
+Long time returner after learning it at university (and using it for a few rhythm game project scripts at some point)  
+
+First off installing it on Windows has gotten somewhat worse (But I appreciate `haskell-stack` being available and doing all I needed and more)  
+
+Second off writing the solution drove me absolutely insane despite knowing exactly what the code would need to look like in Haskell form  
+Type errors everywhere, accidentally using the wrong symbols (`::` instead of `:`, `+` instead of `++`) because of F# habits  
+By the time it compiled I had a correct solution which made me feel big brained though
+
+### Regex
+I sensed that day 6 was doable using regex tooling and evilly cackled when I was right.  
+You can do anything you want with Regex if you put your mind to it (and find an implementation with the right features)
+
+----
+
+Here's some languages I'm trying to eventually work in (the more impractical the better):
 - Prolog
-- ~~Google Sheets~~
 - F#
-- Something using only actors and concurrency
+- Elixir
+- Scala
+- Kotlin
 - Go
-- ~~Rust~~
-- Haskell
 - AutoHotkey
 - Bash
 - Python
+- Clojure
+- Lisp
+- OCaml
