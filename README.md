@@ -47,13 +47,16 @@ I even use a direct descendant of this language every day - F#
 
 Would strongly recommend F# over older MLs based on this experience
 
+### Scala
+Opinion: Overall quite good
+I didn't like eliding () on 0-arity functions before, but after looking more closely at the conventions and how it's implemented, it's pretty sensible
+
 ----
 
 Here's some languages I'm trying to eventually work in (the more impractical the better):
 - Prolog
 - F#
 - Elixir
-- Scala
 - Kotlin
 - Go
 - AutoHotkey
