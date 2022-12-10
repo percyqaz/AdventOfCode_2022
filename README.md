@@ -59,7 +59,6 @@ Here's some languages I'm trying to eventually work in (the more impractical the
 - Elixir
 - Kotlin
 - Go
-- AutoHotkey
 - Bash
 - Python
 - Clojure
