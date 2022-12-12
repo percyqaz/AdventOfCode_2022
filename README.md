@@ -48,17 +48,20 @@ I even use a direct descendant of this language every day - F#
 Would strongly recommend F# over older MLs based on this experience
 
 ### Scala
-Opinion: Overall quite good
+Opinion: Overall quite good  
 I didn't like eliding () on 0-arity functions before, but after looking more closely at the conventions and how it's implemented, it's pretty sensible
+
+### Go
+Opinion: Not very enthused  
+The language appears to build on C in many ways with some good ideas, however they only make sense if you program a lot of C (I don't)  
+Call me a nerd but I prefer Rust's improvements on C on all fronts (syntax, memory safety, type safety)
 
 ----
 
 Here's some languages I'm trying to eventually work in (the more impractical the better):
 - Prolog
-- F#
 - Elixir
-- Kotlin
-- Go
+- Kotlin <- might not happen if I can't get the tooling to work
 - Bash
 - Python
 - Clojure
