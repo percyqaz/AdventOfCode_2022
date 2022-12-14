@@ -1,0 +1,4 @@
+Microsoft.Net.Compilers.4.2.0
+*.exe
+before.txt
+after.txt
