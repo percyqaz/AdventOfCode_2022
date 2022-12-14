@@ -63,6 +63,4 @@ Here's some languages I'm trying to eventually work in (the more impractical the
 - Elixir
 - Kotlin <- might not happen if I can't get the tooling to work
 - Bash
-- Python
-- Clojure
-- Lisp
+- Clojure/Scheme/Common Lisp/Racket/T <- might not happen if I can't get the tooling to work
