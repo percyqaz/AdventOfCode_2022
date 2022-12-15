@@ -1,0 +1,192 @@
+## SOURCE DATA
+
+3844106, 3888618 :: 3225436, 4052707
+1380352, 1857923 :: 10411, 2000000
+272, 1998931 :: 10411, 2000000
+2119959, 184595 :: 2039500, -250317
+1675775, 2817868 :: 2307516, 3313037
+2628344, 2174105 :: 3166783, 2549046
+2919046, 3736158 :: 3145593, 4120490
+16, 2009884 :: 10411, 2000000
+2504789, 3988246 :: 3145593, 4120490
+2861842, 2428768 :: 3166783, 2549046
+3361207, 130612 :: 2039500, -250317
+831856, 591484 :: -175938, 1260620
+3125600, 1745424 :: 3166783, 2549046
+21581, 3243480 :: 10411, 2000000
+2757890, 3187285 :: 2307516, 3313037
+3849488, 2414083 :: 3166783, 2549046
+3862221, 757146 :: 4552923, 1057347
+3558604, 2961030 :: 3166783, 2549046
+3995832, 1706663 :: 4552923, 1057347
+1082213, 3708082 :: 2307516, 3313037
+135817, 1427041 :: -175938, 1260620
+2467372, 697908 :: 2039500, -250317
+3448383, 3674287 :: 3225436, 4052707
+
+```
+we will take 4 away at the end because 4 beacons actually do lie on the 2million line
+```
+
+## DISTANCES (x, y)
+
+618670	164089
+1369941	142077
+10139	1069
+80459	434912
+631741	495169
+538439	374941
+226547	384332
+10395	9884
+640804	132244
+304941	120278
+1321707	380929
+1007794	669136
+41183	803622
+11170	1243480
+450374	125752
+682705	134963
+690702	300201
+391821	411984
+557091	649316
+1225303	395045
+311755	166421
+427872	948225
+222947	378420
+
+some calculator assistance was used
+
+## TAXICAB DISTANCES
+
+782759
+1512018
+11208
+515371
+1126910
+913380
+610879
+20279
+773048
+425219
+1702636
+1676930
+844805
+1254650
+576126
+817668
+990903
+803805
+1206407
+1620348
+478176
+1376097
+601367
+
+
+## Working out the trick
+
+so if we had x = 5, y = 1999999 and d = 1
+then a beacon cannot be at x >= 5, x <= 5, y = 2000000
+
+if we had x = 99, y = 1999999 and d = 2
+then a beacon cannot be at x >= 98, x <= 100, y = 2000000
+
+^ as above but d = 3
+then x >= 97, x <= 101, y = 2000000
+
+so for y = 1999999
+the rule is 'x >= (x + 1 - d), 'x <= (x - 1 + d)
+
+but if y = 2000000
+the rule is 'x >= (x - d), 'x <= (x + d)
+
+so d' = d - abs(y - 2000000)
+the range [x-d', x+d']
+
+## Calculated ranges from all these beacons (on the 2000000 line)
+
+distances are:
+
+-1105859 -> ()
+1369941 -> [10411, 2750293]
+10139 -> [-9867, 10411]
+-1300034 -> ()
+309042 -> [1366733, 1984817]
+739275 -> [1889069, 3367619]
+-1125279 -> ()
+10395 -> [-10379, 10411]
+-1215198 -> ()
+-3549 -> ()
+-166752 -> ()
+268414 -> [563442, 1100270]
+590229 -> [2535371, 3715829]
+11170 -> [10411, 32751]
+-611159 -> ()
+403585 -> [3445903, 4253073]
+-251951 -> ()
+-157225 -> ()
+913070 -> [3082762, 4908902]
+-87734 -> ()
+-94783 -> ()
+74005 -> [2393367, 2541377]
+-1072920 -> ()
+
+so the ranges of X on the line Y = 2000000 where a beacon can't be are:
+[-9867, 10411]
+[-10379, 10411]
+[10411, 32751]
+[10411, 2750293]
+[563442,  1100270]
+[1366733, 1984817]
+[1889069, 3367619]
+[2535371, 3715829]
+[2393367, 2541377]
+[3445903, 4253073]
+[3082762, 4908902]
+
+we can combine some of these/remove redundant ranges
+[-10379,  4908902]
+
+oh wow that really simplified
+
+for [-1, 1] there are 3 numbers, 1, 0, 1
+so final answer for part 1
+
+4908902 - (-10379) + 1
+ -4 beacons lying on this line already
+ 
+ = 4919282 - 4
+ = 4919278
+ 
+this is wrong..
+because you don't take away 4, all of those are the same beacon!
+you just take away 1
+
+4908902 - (-10379) + 1 - 1 = 4919281
+winner winner chicken dinner
+
+## Part 2
+
+Ok we need to adjust y to a number between 0 and 4000000 until the ranges make gaps
+There is only one solution
+How do we do this
+
+If we increase by 1 some ranges grow and some shrink due to being below or above the current line
+Some ranges begin to exist that we cancelled out in part 1
+
+And this is where I wrote some python assistance:
+
+- Start at y = 2000000
+Calculate the ranges covered by beacons (normally this is one range covering more than [0, 4000000]
+Note the overlaps of ranges
+
+Now move UP or DOWN (try both) by HALF of the overlap amount (rounded up)
+This will hopefully move to a y coordinate where two ranges have a 1 square gap
+Try that y coordinate, note down new guesses, repeat.
+
+This process ran in a few seconds until it found the notable answer:
+
+y=3363767
+x=3157535
+
+12630143363767 <- final signal :)
