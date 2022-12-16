@@ -1,11 +1,10 @@
 # Advent of Code 2022
 https://adventofcode.com/ is an event where every day for 25 days leading up to christmas, you get a challenge that should be solved using programming or similar tools.  
-I'm using this as an excuse to use **a different tool or language each day**, some for the first time ever.
 
-The more unusual/unconventional the tool, the more fun I think I will have using it.
+My original goal was to use this as an excuse to use **a different tool or language each day**, some for the first time ever.  
 
-Midway I may also do Part 1 and Part 2 in different languages, with the rule that I can reuse a language for one of the two parts but not both  
-Near the end, I expect I will need to use my strongest tools, as the problems get harder each day
+Now that the problems have ramped up in difficulty (day 15 onwards), **I will be freely using the most comfortable tools at my disposal**.  
+(Perhaps still with a few surprises)
 
 ----
 
@@ -58,7 +57,7 @@ Call me a nerd but I prefer Rust's improvements on C on all fronts (syntax, memo
 
 ----
 
-Here's some languages I'm trying to eventually work in (the more impractical the better):
+Some languages ~~I'm trying to eventually work in~~ to use next year (the more impractical the better):
 - Prolog
 - Elixir
 - Kotlin <- might not happen if I can't get the tooling to work
