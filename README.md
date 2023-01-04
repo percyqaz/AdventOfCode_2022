@@ -3,13 +3,22 @@ https://adventofcode.com/ is an event where every day for 25 days leading up to 
 
 My original goal was to use this as an excuse to use **a different tool or language each day**, some for the first time ever.  
 
+#### Day 15 note
+
 Now that the problems have ramped up in difficulty (day 15 onwards), **I will be freely using the most comfortable tools at my disposal**.  
 (Perhaps still with a few surprises)
 
+#### Day 25 note
+
+I didn't do the puzzle every day after the 16th because I was doing christmas things :) But am pleased to have followed up and finished what I started
+
+By the end the puzzles got easier (in my opinion) so I could've gotten creative with languages again -- See you next year!
+
 ----
 
-Don't look at any of the solutions if you don't want spoilers!  
-(I only upload my solutions after the top 100 leaderboard is full)
+Don't look at any of the solutions if you don't want spoilers!
+
+All solutions have been my own with basically 0 outside assistance (Once or twice a meme from the subreddit would spark inspiration)
 
 ----
 
